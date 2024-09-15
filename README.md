@@ -1,5 +1,30 @@
 # Stay-Rooted
-A collaborative game made for Brackeys Game Jame 2024.2
+MASH THE RIGHT KEYS TO STAY ROOTED! Hit PLAY to enter the storm...
+
+
+
+This project was made for "Brackeys Game Jam 2024.2".
+
+
+
+-----------------------------------DEVELOPERS-----------------------------------
+
+velano: Art/Graphic Designer, Music/SFX Designer, Programmer
+
+RickyET: Programmer, Level/Game Designer
+
+shikazx: Programmer, Menu Designer
+
+
+
+--------------------------------------CREDITS---------------------------------------
+
+Kongtext Font: [ codeman38 | cody@zone38.net | http://www.zone38.net/ ]
+
+Music - Abstraction: https://tallbeard.itch.io/music-loop-bundle
+
+
+
 
 **[CLICK HERE TO PLAY THE GAME](https://shikazx.itch.io/stay-rooted)**
 
