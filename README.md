@@ -21,7 +21,7 @@ _Kongtext Font: [ codeman38 | cody@zone38.net | http://www.zone38.net/ ]_
 _Music - Abstraction: https://tallbeard.itch.io/music-loop-bundle_
 
 \
-\
+
 
 # [CLICK HERE TO PLAY THE GAME](https://shikazx.itch.io/stay-rooted) 
 
