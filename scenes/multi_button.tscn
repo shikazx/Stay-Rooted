@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://0wvyutedop4u"]
+
+[ext_resource type="Texture2D" uid="uid://pnodqbo5ge1v" path="res://Assets/Spritesheet/Coconut Buttons/CoconutButton_A.png" id="1_uw4u1"]
+[ext_resource type="Texture2D" uid="uid://dfo8w3jf3mtid" path="res://Assets/Spritesheet/Coconut Buttons/CoconutButton_D.png" id="2_2y2ib"]
+[ext_resource type="Texture2D" uid="uid://m7vlb7oi6ay1" path="res://Assets/Spritesheet/Coconut Buttons/CoconutButton_S.png" id="3_v8upb"]
+[ext_resource type="Texture2D" uid="uid://bd01wrxcd23o2" path="res://Assets/Spritesheet/Coconut Buttons/CoconutButton_Space.png" id="4_8ghl6"]
+[ext_resource type="Texture2D" uid="uid://ih0f45b3fcn2" path="res://Assets/Spritesheet/Coconut Buttons/CoconutButton_W.png" id="5_87s6e"]
+
+[node name="MultiButton" type="Node2D"]
+
+[node name="CoconutButtonA2Key" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+scale = Vector2(2, 2)
+texture = ExtResource("1_uw4u1")
+hframes = 2
+
+[node name="CoconutButtonD2Key" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+scale = Vector2(2, 2)
+texture = ExtResource("2_2y2ib")
+hframes = 2
+
+[node name="CoconutButtonS2Key" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+scale = Vector2(2, 2)
+texture = ExtResource("3_v8upb")
+hframes = 2
+
+[node name="CoconutButtonSpace2Key" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+scale = Vector2(2, 2)
+texture = ExtResource("4_8ghl6")
+hframes = 2
+
+[node name="CoconutButtonW2Key" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+scale = Vector2(2, 2)
+texture = ExtResource("5_87s6e")
+hframes = 2

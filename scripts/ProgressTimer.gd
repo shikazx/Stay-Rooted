@@ -1,0 +1,8 @@
+extends Timer
+
+@onready var timer = $Timer
+@onready var total_time : int = 0 
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	$Timer.start()

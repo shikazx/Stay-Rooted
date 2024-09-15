@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://nhmwhmaso0u3"]
+
+[ext_resource type="Script" path="res://scripts/Timer.gd" id="1_3510o"]
+[ext_resource type="FontFile" uid="uid://5ce34jyqce7y" path="res://Assets/kongtext.ttf" id="2_oie75"]
+
+[node name="Timer_Basic Score" type="Node2D"]
+script = ExtResource("1_3510o")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 262.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("2_oie75")
+text = "Your score is"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 21.0
+offset_right = 369.0
+offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("2_oie75")
+text = "Your highest score is: "
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

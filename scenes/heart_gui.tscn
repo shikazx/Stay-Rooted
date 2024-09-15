@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://hmbthikyyohg"]
+
+[ext_resource type="Texture2D" uid="uid://cak732ndcfnbt" path="res://Assets/Spritesheet/CoconutLife.png" id="1_ew3ge"]
+
+[node name="heartGUI" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(16, 16)
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ew3ge")
+centered = false
+hframes = 2

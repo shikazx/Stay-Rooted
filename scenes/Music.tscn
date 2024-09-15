@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=3 uid="uid://ctm7qccwqmatx"]
+
+[ext_resource type="Script" path="res://scenes/music.gd" id="1_fc1fp"]
+[ext_resource type="AudioStream" uid="uid://48wloy4w10la" path="res://Assets/ProgressDone.ogg" id="2_hoire"]
+[ext_resource type="AudioStream" uid="uid://buboq618mmqyc" path="res://Assets/GameplayMusicWithRain.ogg" id="2_iy35w"]
+[ext_resource type="AudioStream" uid="uid://cpevbfotxbdi3" path="res://Assets/MenuMusic.ogg" id="2_tmg0f"]
+[ext_resource type="AudioStream" uid="uid://bxb15r8e1ov5n" path="res://Assets/LoseLife.ogg" id="5_01aru"]
+[ext_resource type="AudioStream" uid="uid://ue1af6mb4l2d" path="res://Assets/TreeBending.ogg" id="6_bxqna"]
+
+[sub_resource type="Animation" id="Animation_45slb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Menu:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-15.04]
+}
+
+[sub_resource type="Animation" id="Animation_2krr4"]
+resource_name = "fadeOut"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Menu:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-15.04, -80.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wu2fv"]
+_data = {
+"RESET": SubResource("Animation_45slb"),
+"fadeOut": SubResource("Animation_2krr4")
+}
+
+[node name="Music" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fc1fp")
+
+[node name="LevelUp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_hoire")
+volume_db = -10.0
+
+[node name="Menu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_tmg0f")
+volume_db = -15.04
+parameters/looping = true
+
+[node name="inGame" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_iy35w")
+volume_db = -15.928
+parameters/looping = true
+
+[node name="MenuFade" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_wu2fv")
+}
+
+[node name="loseLife" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_01aru")
+volume_db = -10.0
+
+[node name="treeBending" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_bxqna")
+volume_db = 1.0

@@ -1,0 +1,83 @@
+[gd_scene load_steps=8 format=3 uid="uid://cb7fi0q0sd8vl"]
+
+[ext_resource type="Script" path="res://scripts/death.gd" id="1_3260y"]
+[ext_resource type="Texture2D" uid="uid://b1ekkvgwvunit" path="res://Assets/white.png" id="2_8i4ni"]
+[ext_resource type="Texture2D" uid="uid://bnxwmhsljfolk" path="res://Assets/CoconutButton_retrY_normla.png" id="3_enyqv"]
+[ext_resource type="Texture2D" uid="uid://1qi8aic46r0s" path="res://Assets/CoconutButton_Retry.png" id="4_w2mm0"]
+[ext_resource type="Texture2D" uid="uid://b1loarcwfo8en" path="res://Assets/CoconutButton_Menu normal.png" id="4_wts0f"]
+[ext_resource type="Texture2D" uid="uid://clvu5n465r0rs" path="res://Assets/CoconutButton_Menu.png" id="5_61pws"]
+[ext_resource type="FontFile" uid="uid://5ce34jyqce7y" path="res://Assets/kongtext.ttf" id="7_sot1n"]
+
+[node name="Death" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3260y")
+
+[node name="blackbox" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(577.5, 333)
+scale = Vector2(1.305, 1.29893)
+texture = ExtResource("2_8i4ni")
+
+[node name="Retry" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 418.0
+offset_right = 187.0
+offset_bottom = 434.0
+scale = Vector2(5, 5)
+texture_normal = ExtResource("3_enyqv")
+texture_pressed = ExtResource("4_w2mm0")
+ignore_texture_size = true
+
+[node name="Menu" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 728.0
+offset_top = 418.0
+offset_right = 791.0
+offset_bottom = 434.0
+scale = Vector2(5, 5)
+texture_normal = ExtResource("4_wts0f")
+texture_pressed = ExtResource("5_61pws")
+ignore_texture_size = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 73.0
+offset_top = 59.0
+offset_right = 1093.0
+offset_bottom = 147.0
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("7_sot1n")
+theme_override_font_sizes/font_size = 93
+text = "YOU DIED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Current Sore" type="Label" parent="."]
+offset_left = 60.0
+offset_top = 239.0
+offset_right = 1080.0
+offset_bottom = 300.0
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("7_sot1n")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="High Score" type="Label" parent="."]
+offset_left = 56.0
+offset_top = 547.0
+offset_right = 1076.0
+offset_bottom = 608.0
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("7_sot1n")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

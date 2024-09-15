@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://djofxttg2f5oq"]
+
+[ext_resource type="Texture2D" uid="uid://cak732ndcfnbt" path="res://Assets/Spritesheet/CoconutLife.png" id="1_bwvpt"]
+
+[node name="Coconut" type="Node2D"]
+
+[node name="CoconutLife2" type="Sprite2D" parent="."]
+position = Vector2(56, 470)
+scale = Vector2(2.375, 2.375)
+texture = ExtResource("1_bwvpt")
+hframes = 2
+
+[node name="CoconutLife3" type="Sprite2D" parent="."]
+position = Vector2(175, 500)
+scale = Vector2(2.375, 2.375)
+texture = ExtResource("1_bwvpt")
+hframes = 2
+
+[node name="CoconutLife4" type="Sprite2D" parent="."]
+position = Vector2(235, 461)
+scale = Vector2(2.375, 2.375)
+texture = ExtResource("1_bwvpt")
+hframes = 2
+
+[node name="CoconutLife" type="Sprite2D" parent="."]
+position = Vector2(-26, 497)
+scale = Vector2(2.375, 2.375)
+texture = ExtResource("1_bwvpt")
+hframes = 2
