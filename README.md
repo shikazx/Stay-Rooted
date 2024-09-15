@@ -17,6 +17,7 @@ _This project was made for "Brackeys Game Jam 2024.2"._
 
 **-------------------------------------------------------------------------CREDITS--------------------------------------------------------------------------**
 _Kongtext Font: [ codeman38 | cody@zone38.net | http://www.zone38.net/ ]_
+
 _Music - Abstraction: https://tallbeard.itch.io/music-loop-bundle_
 
 
